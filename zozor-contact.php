@@ -9,13 +9,21 @@
 
   <?php include('heaser.php'); ?>
 </header>
-<a href="zozor.php">retour a zozor</a>
+<a id="retourzozor" href="zozor.php">retour a zozor</a>
 
 
 <div id="contact">
   <h1>Contactez-nous</h1>
 
-  <form action="" method="get">
+  <form method="post" action="submit_formulaire.php">
+
+
+
+
+
+
+
+
     <p>
       Un problème, une question ? N’hésitez pas à utiliser ce formulaire <br>pour
       prendre contact avec nous !
@@ -26,7 +34,7 @@
     </div>
     <div>
       <label for="email">Votre e-mail</label>
-      <input type="email" id="email" name="email" placeholder="monadresse@mail.com" required />
+      <input type="email" id="email" name="email" placeholder="monadresse@mail.com" />
     </div>
     <div>
       <label for="sujet">Quel est le sujet de votre message ?</label>

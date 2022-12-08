@@ -11,7 +11,7 @@
   <?php include('heaser.php'); ?>
 </header>
 <h1>Bienvenu a l'acceuil</h1>
-<a href="zozor.php">retour a zozor</a>
+<a id="retourzozor" href="zozor.php">retour a zozor</a>
 <img src="https://picsum.photos/1500/2000?random=1" />
 <footer>
   <?php include('./footer.php'); ?>

@@ -13,6 +13,7 @@
 
     <?php include('heaser.php'); ?>
   </header>
+  <a id="retourzozor" href="zozor.php">retour a zozor</a>
   <h1>Bienvenu sur le blog Zozor</h1>
   <p> Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloribus culpa aspernatur iste itaque ipsum perspiciatis voluptate, ipsa exercitationem quas reiciendis veniam saepe dolorum eius sequi doloremque repellat illo atque iure.</p>
   <p> Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloribus culpa aspernatur iste itaque ipsum perspiciatis voluptate, ipsa exercitationem quas reiciendis veniam saepe dolorum eius sequi doloremque repellat illo atque iure.</p>

@@ -63,6 +63,12 @@ section,
   padding: 5px;
   margin: 5px;
 }
+/* lien de retour */
+#retourzozor {
+  color: black;
+
+  text-decoration: none;
+}
 
 #liste-amis ul a,
 nav a,
@@ -351,4 +357,14 @@ form div > select {
 form div > textarea {
   height: 195px;
   padding: 15px 0px 0px 10px;
+}
+/* page submit formulaire */
+.card {
+  display: flex;
+  justify-content: center;
+}
+#cardh {
+  border: solid black 1px;
+
+  font-family: "Dancing Script";
 }
