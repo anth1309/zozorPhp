@@ -15,14 +15,8 @@
 <div id="contact">
   <h1>Contactez-nous</h1>
 
-  <form method="post" action="submit_formulaire.php">
-
-
-
-
-
-
-
+  <form method="post" action="submit_formulaire.php" enctype="multipart/form-data">
+    <!--permet d envoyer un fichier -->
 
     <p>
       Un problème, une question ? N’hésitez pas à utiliser ce formulaire <br>pour
@@ -52,6 +46,10 @@
     <div>
       <label for="message">Votre message</label>
       <textarea id="message" name="message" placeholder="Bonjour, je vous contacte car...." required></textarea>
+    </div>
+    <div>
+      <label for="screenshot" class="form-label">Votre capture d'écran</label>
+      <input type="file" class="form-control" id="screenshot" name="screenshot" />
     </div>
     <div>
       <button type="submit">Envoyer mon message</button>

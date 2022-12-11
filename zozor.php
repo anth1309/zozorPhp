@@ -14,7 +14,9 @@
         <header>
 
             <?php include('./heaser.php'); ?>
+
         </header>
+        <?php include_once('./conexion.php') ?>
 
         <div id="banniere-img">
 
