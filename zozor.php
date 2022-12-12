@@ -1,30 +1,25 @@
+<!-- <?php session_start() ?> -->
+
 <!doctype html>
 <html lang="fr">
 
 <head>
     <meta charset="utf-8">
     <title>blog Zozor</title>
-
     <link rel="stylesheet" href="style-zozor.css">
 </head>
 
 <body>
-
     <main>
         <header>
-
-            <?php include('./heaser.php'); ?>
-
+            <?php include_once('./header.php'); ?>
         </header>
         <?php include_once('./conexion.php') ?>
 
         <div id="banniere-img">
-
             <div id="bouton">
                 <h1>Mes vacances aux States</h1><a href="./zozor-cv.php" id="bout-rouge">C'est par ici<img src="./images/flecheblanchedroite.png" alt=""></a>
             </div>
-
-
         </div>
 
         <section>

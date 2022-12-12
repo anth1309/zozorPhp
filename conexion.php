@@ -5,28 +5,28 @@
 
         $users = [
             [
-                'user' => 'Jordan',
+                'userI' => 'Jordan',
                 'email' => 'jordan@gmail.com',
                 'password' => '1234',
                 'sexe' => 'homme',
                 'age' => 34,
             ],
             [
-                'user' => 'Isabelle',
+                'userI' => 'Isabelle',
                 'email' => 'isabelle@gmail.com',
                 'password' => '5678',
                 'sexe' => 'femme',
                 'age' => 45,
             ],
             [
-                'user' => 'Valérie',
+                'userI' => 'Valérie',
                 'email' => 'valérie@gmail.com',
                 'password' => '91011',
                 'sexe' => 'femme',
                 'age' => 25,
             ],
             [
-                'user' => 'Peter',
+                'userI' => 'Peter',
                 'email' => 'theboss@gmail.com',
                 'password' => '1213',
                 'sexe' => 'homme',
@@ -34,15 +34,17 @@
             ],
         ];
 
-        if (isset($_POST['identifiant']) && isset($_POST['password']) && isset($_POST['user1'])) {
+        if (isset($_POST['identifiant']) && isset($_POST['password']) && isset($_POST['userInput'])) {
             foreach ($users as $user) {
 
-                if ($user['email'] === $_POST['identifiant'] && $user['password'] === $_POST['password']) {
-                    $loguser = ['email' => $user['email'],];
+
+                if ($user['email'] === $_POST['identifiant'] && $user['password'] === $_POST['password'] && $user['userI'] === ucfirst($_POST['userInput'])) {
+
+                    $_SESSION['loguser'] = $user['userI'];
                 } else {
                     $errorIdentification = sprintf(
-                        '%s Vos identifiants ne sont pas valident: %s n est pas votre adresse mail d\'inscription et/ou votre mot de passe est erroné',
-                        $_POST['user1'],
+                        '%s Vos identifiants ne sont pas valident: %s n\'est pas votre adresse mail d\'inscription et/ou votre mot de passe est erroné',
+                        $_POST['userInput'],
                         $_POST['identifiant'],
 
                     );
@@ -51,7 +53,7 @@
         }
         ?>
 
-        <?php if (!isset($loguser)) :  ?>
+        <?php if (!isset($_SESSION['loguser'])) :  ?>
             <form action='./zozor.php' method='post'>
                 <?php if (isset($errorIdentification)) : ?>
                     <div>
@@ -61,8 +63,8 @@
                 <div id="conexion">
 
                     <div>
-                        <label for="user1">Votre pseudo</label>
-                        <input type="text" id="user1" name="user1">
+                        <label for="userInput">Votre pseudo</label>
+                        <input type="text" id="userInput" name="userInput">
                     </div>
                     <div>
                         <label for="identifiant">Votre identifiant</label>
@@ -72,6 +74,7 @@
                         <label for="passworrd">Votre mot de passe</p></label>
                         <input type="password" id="password" name="password" placeholder="Votre mot de passe">
                     </div>
+
                     <div>
                         <button type='submit'>Conexion</button>
                     </div>
@@ -79,14 +82,12 @@
             </form>
         <?php else : ?>
             <div id="messageAcceuil">
-                Bonjour <?php print ucfirst($_POST['user1']) ?> bienvenue sur le site Zozor
+                Bonjour <?php echo (htmlspecialchars($_SESSION['loguser'])) ?> bienvenue sur le site Zozor
             </div>
 
         <?php endif; ?>
 
-
-
-
+        <!-- <?php print ucfirst($_POST['user1']) ?>-->
 
 
 

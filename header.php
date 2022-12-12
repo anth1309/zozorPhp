@@ -4,7 +4,7 @@
         <img src="./images/zozor_logo.png" alt="logo zozor">
         <h1>Zozor</h1>
     </div>
-    <h2>Carnet de voyage</h2>
+    <h2>Carnet DE voyage</h2>
 
 </div>
 
