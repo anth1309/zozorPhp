@@ -1,3 +1,5 @@
+<?php session_start() ?>
+
 <head>
   <meta charset="utf-8">
   <link rel="stylesheet" href="style-zozor.css">
@@ -7,8 +9,11 @@
 
 <header>
 
-  <?php include('heaser.php'); ?>
+  <?php include('header.php'); ?>
 </header>
+<!-- <div id="messageAcceuil">
+  Bonjour <?php print ucfirst($_POST['user1']) ?> bienvenue sur le site Zozor
+</div> -->
 <a id="retourzozor" href="zozor.php">retour a zozor</a>
 
 
