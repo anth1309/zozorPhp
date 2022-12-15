@@ -368,6 +368,7 @@ form div > textarea {
 
 /* Css conexion */
 #conexion div {
+  font-size: 1.3em;
   display: flex;
   /* flex-direction: column; */
   justify-content: center;
@@ -382,7 +383,41 @@ form div > textarea {
 }
 
 #messageAcceuil {
-  color: rgb(166, 93, 93);
   font-size: 2em;
   font-family: "Dancing Script", cursive;
+}
+/* CSS Formulaire d inscription */
+
+.divCreateUser {
+  width: 60%;
+  font-size: 1.5em;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+#createUser div label,
+#createUser input {
+  width: 300px;
+}
+#CreateUser form {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: rgb(215, 211, 211);
+}
+#button {
+  font-size: 2em;
+  height: 60px;
+  display: flex;
+  align-items: center;
+  align-content: center;
+}
+#button button,
+#conexion div button {
+  box-shadow: 5px 5px rgb(65, 61, 61);
+  border: solid black 3px;
+  border-radius: 10px;
+  font-size: 1.2em;
+  height: 50px;
 }

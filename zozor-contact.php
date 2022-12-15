@@ -1,9 +1,7 @@
-<?php session_start() ?>
-
 <head>
   <meta charset="utf-8">
-  <link rel="stylesheet" href="style-zozor.css">
   <title>contact</title>
+  <link rel="stylesheet" href="style-zozor.css">
 </head>
 
 
@@ -20,7 +18,7 @@
 <div id="contact">
   <h1>Contactez-nous</h1>
 
-  <form method="post" action="submit_formulaire.php" enctype="multipart/form-data">
+  <form method="POST" action="submit_formulaire.php" enctype="multipart/form-data">
     <!--permet d envoyer un fichier -->
 
     <p>

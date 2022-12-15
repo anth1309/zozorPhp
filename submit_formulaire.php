@@ -30,7 +30,7 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
 <body>
     <main>
         <header>
-            <?php include_once('heaser.php'); ?>
+            <?php include_once('header.php'); ?>
         </header>
         <a id="retourzozor" href="zozor.php">retour a zozor</a>
         <h1>Message bien reçu !</h1>
